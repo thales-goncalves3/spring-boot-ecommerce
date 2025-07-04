@@ -13,7 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class CategoryServiceImpl implements CategoryService{
 
-    private List<Category> categories = new ArrayList<>();
+    private final List<Category> categories = new ArrayList<>();
     private Long nextId = 1L;
 
     @Override
